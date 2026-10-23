@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehak Garg | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+
+    <header class="header">
+        <div class="profile_name">Mehak Garg</div>
+
+        <nav class="topmenu" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="#home" class="home-link" aria-label="Home" title="Home">
+                    <span class="home-icon">&#8962;</span>
+                </a>
+                <a href="#about">About Me</a>
+                <a href="#project-details">Project Details</a>
+                <a href="#skills">Skills</a>
+                <a href="#recommendations">Recommendations</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="profile-photo">
+                <img src="profile.jpg"
+                     alt="Mehak Garg profile photo"
+                     class="profile_image">
+            </div>
+
+            <div class="about-content">
+                <h1>Hi, I'm Mehak Garg! 👋</h1>
+                <h2>Student | Aspiring Web Developer</h2>
+                <p>
+                    I am a university student who enjoys learning about
+                    technology, web development, and creative problem-solving.
+                    I like building projects that combine useful functionality
+                    with clean and attractive designs. I am continuously
+                    improving my skills in HTML, CSS, JavaScript, and modern
+                    web technologies while exploring new ideas.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                         alt="HTML5 logo">
+                    <h3>HTML5</h3>
+                    <p>Building structured web pages</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                         alt="CSS3 logo">
+                    <h3>CSS3</h3>
+                    <p>Styling responsive interfaces</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                         alt="JavaScript logo">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactive functionality</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                         alt="React logo">
+                    <h3>React</h3>
+                    <p>Learning component-based development</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                         alt="Git logo">
+                    <h3>Git</h3>
+                    <p>Version control and project tracking</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-details" class="section">
+            <h2 class="section-title">Project Details</h2>
+
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A personal website showcasing my profile, skills,
+                        projects, and recommendations using HTML, CSS,
+                        and JavaScript.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Campus Lost &amp; Found Portal</h3>
+                    <p>
+                        A student-focused web application for reporting
+                        lost belongings and helping people reconnect
+                        with their items.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>AI-Powered Task Management System</h3>
+                    <p>
+                        A project concept that uses task information,
+                        deadlines, and priorities to help users organize
+                        their workloads more effectively.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="recommendations" class="section">
+            <h2 class="section-title">Recommendations</h2>
+
+            <div id="recommendations-list" class="recommendations-list">
+                <div class="recommendation-card">
+                    Mehak is a dedicated learner who approaches new
+                    challenges with curiosity and a positive attitude.
+                </div>
+
+                <div class="recommendation-card">
+                    She shows creativity in her projects and is always
+                    willing to explore new technologies and ideas.
+                </div>
+
+                <div class="recommendation-card">
+                    Her willingness to learn and improve makes her a
+                    motivated student with great potential.
+                </div>
+            </div>
+
+            <div class="add-recommendation">
+                <h3>Add a Recommendation</h3>
+
+                <form id="recommendation-form">
+                    <label for="recommendation-input">
+                        Your recommendation
+                    </label>
+
+                    <textarea
+                        id="recommendation-input"
+                        name="recommendation"
+                        placeholder="Write a recommendation..."
+                        rows="4"
+                        required></textarea>
+
+                    <button type="submit" id="submit-btn">
+                        Submit Recommendation
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Mehak Garg | Personal Portfolio</p>
+        </footer>
+    </main>
+
+    <div id="popup" class="popup" role="dialog"
+         aria-modal="true" aria-labelledby="popup-title" hidden>
+        <div class="popup-content">
+            <span class="popup-check" aria-hidden="true">&#10003;</span>
+            <h2 id="popup-title">Thank You!</h2>
+            <p>Your recommendation has been added successfully.</p>
+            <button type="button" id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
